@@ -146,12 +146,21 @@
   .header-phone { display: none; }
   .header-actions .btn { display: none; }
 
+  /* Le header porte un backdrop-filter : il devient le bloc conteneur de ses
+     descendants en position fixed. Le panneau s'ancre donc sous le header en
+     absolute, sinon il reste enfermé dans la hauteur de l'en-tête. */
   .site-nav {
-    position: fixed;
-    inset: 76px 0 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     z-index: var(--z-overlay);
+    max-height: calc(100vh - 76px);
+    max-height: calc(100dvh - 76px);
     padding: var(--sp-6) var(--gutter) var(--sp-8);
     background: var(--c-surface);
+    border-bottom: 1px solid var(--c-border);
+    box-shadow: var(--shadow-md);
     overflow-y: auto;
     opacity: 0;
     visibility: hidden;

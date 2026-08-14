@@ -7,3 +7,6 @@ __pycache__/
 # Non publiable : video du praticien, outil interne
 Ref/
 hypno-topics/
+
+# Rendus lourds (vidéo, plans) : hors dépôt
+Output/
