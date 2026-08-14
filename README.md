@@ -5,6 +5,7 @@
 | Démo | URL | Ce qu'elle prouve |
 |---|---|---|
 | **Vitrine premium** (statique) | https://etienne-morax.github.io/hypnose-angers-demo/ | La direction artistique réelle : Lora + Raleway, orbe animée, palette complète. C'est ce que donne le thème sur mesure. |
+| **Vitrine illustrée** (Vercel) | https://hypnose-angers-illustre.vercel.app/ | La même page avec les visuels générés : héros photographique, texture de brume, images à la une du blog. |
 | **WordPress live** | https://hypnoseangers3.wordpress.com/ | Le pipeline éditorial : articles publiés par API, grille de blog, SEO et JSON-LD automatiques. C'est la démo PostPilot. |
 
 Les deux ne se remplacent pas. Le WordPress tourne sur un plan gratuit : ni thème custom,
