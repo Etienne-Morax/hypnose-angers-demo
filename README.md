@@ -39,6 +39,9 @@ python3 site/build.py            # récupère les articles et régénère /blog/
 python3 site/build.py --offline  # rejoue le dernier cache, sans réseau
 ```
 
+Le projet Vercel est relié au dépôt GitHub : **Root Directory = `site`**, branche de production
+`main`. Un `git push` sur `main` suffit donc à publier — plus besoin de `vercel deploy`.
+
 Deux sources, un seul rendu :
 
 | Source | Chemin | Ce qui est repris |
