@@ -8,13 +8,13 @@
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="assets/css/tokens.css">
-<link rel="stylesheet" href="assets/css/base.css">
-<link rel="stylesheet" href="assets/css/layout.css">
-<link rel="stylesheet" href="assets/css/components.css">
-<link rel="stylesheet" href="assets/css/blog.css">
-<link rel="stylesheet" href="assets/css/photo.css">
-<link rel="preload" as="image" href="assets/img/hero-horizon.webp" imagesrcset="assets/img/hero-horizon-700.webp 700w, assets/img/hero-horizon.webp 1200w" imagesizes="(max-width: 899px) 92vw, 44vw">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/layout.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/blog.css">
+<link rel="stylesheet" href="/assets/css/photo.css">
+<link rel="preload" as="image" href="/assets/img/hero-horizon.webp" imagesrcset="/assets/img/hero-horizon-700.webp 700w, /assets/img/hero-horizon.webp 1200w" imagesizes="(max-width: 899px) 92vw, 44vw">
 </head>
 <body>
 
@@ -41,7 +41,7 @@
         <li><a href="#domaines">Domaines</a></li>
         <li><a href="#tarifs">Tarifs</a></li>
         <li><a href="#apropos">Qui suis-je&nbsp;?</a></li>
-        <li><a href="#articles">Blog</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="site-nav__cta">
@@ -89,8 +89,8 @@
 
     <div class="hero__visual">
       <div class="hero__frame">
-        <img src="assets/img/hero-horizon.webp"
-             srcset="assets/img/hero-horizon-700.webp 700w, assets/img/hero-horizon.webp 1200w"
+        <img src="/assets/img/hero-horizon.webp"
+             srcset="/assets/img/hero-horizon-700.webp 700w, /assets/img/hero-horizon.webp 1200w"
              sizes="(max-width: 899px) 92vw, 44vw"
              width="1200" height="670" fetchpriority="high" decoding="async"
              alt="Horizon brumeux au lever du jour, lumière dorée diffuse">
@@ -262,54 +262,57 @@
     </div>
 
     <div class="post-grid">
-      <article class="post-card post-card--lead reveal">
+      <!-- posts:start -->
+<article class="post-card post-card--lead reveal">
         <div class="post-card__media">
-          <img src="assets/img/blog-sommeil.webp"
-               srcset="assets/img/blog-sommeil-800.webp 800w, assets/img/blog-sommeil.webp 1400w"
+          <img src="/assets/img/blog-avis-800.webp"
+               srcset="/assets/img/blog-avis-800.webp 800w, /assets/img/blog-avis.webp 1400w"
                sizes="(max-width: 767px) 92vw, 46vw"
                width="1400" height="788" loading="lazy" decoding="async"
-               alt="Lit défait au petit matin, lumière filtrée par un rideau">
+               alt="Carnet ouvert et stylo posés sur une nappe de lin, verre d&#x27;eau et vase en terre cuite">
         </div>
         <div class="post-card__body">
-          <div class="post-card__meta"><time>12 août 2026</time><span>·</span><a href="#">Sommeil</a><span>·</span><span>6 min de lecture</span></div>
-          <h3 class="post-card__title"><a href="#">Pourquoi votre mental s'emballe au moment du coucher</a></h3>
-          <p class="post-card__excerpt">L'insomnie d'endormissement n'est presque jamais un problème de fatigue. C'est un problème d'attention — et c'est précisément là que l'hypnose intervient.</p>
+          <div class="post-card__meta"><time datetime="2026-08-14">14 août 2026</time><span>·</span><a href="/blog/avis-hypnotherapeute-angers/">Avis</a><span>·</span><span>5 min de lecture</span></div>
+          <h3 class="post-card__title"><a href="/blog/avis-hypnotherapeute-angers/">Avis sur un hypnothérapeute à Angers</a></h3>
+          <p class="post-card__excerpt">Avis sur l&#x27;hypnose à Angers : où trouver des témoignages fiables, quels signaux doivent alerter, et ce que les avis ne disent jamais sur les résultats.</p>
           <p class="post-card__foot">Lire l'article →</p>
         </div>
       </article>
-
-      <article class="post-card reveal">
+<article class="post-card reveal">
         <div class="post-card__media">
-          <img src="assets/img/blog-tabac-800.webp"
-               srcset="assets/img/blog-tabac-800.webp 800w, assets/img/blog-tabac.webp 1400w"
+          <img src="/assets/img/blog-tarif-800.webp"
+               srcset="/assets/img/blog-tarif-800.webp 800w, /assets/img/blog-tarif.webp 1400w"
                sizes="(max-width: 767px) 92vw, 30vw"
                width="1400" height="788" loading="lazy" decoding="async"
-               alt="Cendrier et verre d'eau sur une table, feuille verte posée en travers">
+               alt="Fauteuil de consultation près d&#x27;une fenêtre, lumière douce de fin de journée">
         </div>
         <div class="post-card__body">
-          <div class="post-card__meta"><time>29 juillet 2026</time><span>·</span><a href="#">Tabac</a><span>·</span><span>4 min de lecture</span></div>
-          <h3 class="post-card__title"><a href="#">Arrêter de fumer sans volonté héroïque</a></h3>
-          <p class="post-card__excerpt">Ce que la volonté seule ne peut pas faire, et pourquoi ce n'est pas un défaut de caractère.</p>
+          <div class="post-card__meta"><time datetime="2026-08-14">14 août 2026</time><span>·</span><a href="/blog/tarif-seance-hypnose-angers/">Tarifs</a><span>·</span><span>5 min de lecture</span></div>
+          <h3 class="post-card__title"><a href="/blog/tarif-seance-hypnose-angers/">Tarif d&#x27;une séance d&#x27;hypnose à Angers : ce que vous payez, et pourquoi</a></h3>
+          <p class="post-card__excerpt">Combien coûte une séance d&#x27;hypnose à Angers ? Tarifs détaillés, nombre de séances à prévoir et prise en charge mutuelle. Cabinet à Avrillé.</p>
           <p class="post-card__foot">Lire l'article →</p>
         </div>
       </article>
-
-      <article class="post-card reveal">
+<article class="post-card reveal">
         <div class="post-card__media">
-          <img src="assets/img/blog-hypersensibilite-800.webp"
-               srcset="assets/img/blog-hypersensibilite-800.webp 800w, assets/img/blog-hypersensibilite.webp 1400w"
+          <img src="/assets/img/blog-hypersensibilite-800.webp"
+               srcset="/assets/img/blog-hypersensibilite-800.webp 800w, /assets/img/blog-hypersensibilite.webp 1400w"
                sizes="(max-width: 767px) 92vw, 30vw"
                width="1400" height="788" loading="lazy" decoding="async"
                alt="Voile translucide effleurant le sable, teintes sable et sauge">
         </div>
         <div class="post-card__body">
-          <div class="post-card__meta"><time>15 juillet 2026</time><span>·</span><a href="#">Hypersensibilité</a><span>·</span><span>5 min de lecture</span></div>
-          <h3 class="post-card__title"><a href="#">Hypersensible : régler le filtre, pas la sensibilité</a></h3>
-          <p class="post-card__excerpt">Ressentir fort n'est pas le problème. Ne plus pouvoir baisser le volume, si.</p>
+          <div class="post-card__meta"><time datetime="2026-08-14">14 août 2026</time><span>·</span><a href="/blog/hypersensible-regler-le-filtre/">Hypersensibilité</a><span>·</span><span>2 min de lecture</span></div>
+          <h3 class="post-card__title"><a href="/blog/hypersensible-regler-le-filtre/">Hypersensible : régler le filtre, pas la sensibilité</a></h3>
+          <p class="post-card__excerpt">Ressentir fort n’est pas le problème. Ne plus pouvoir baisser le volume, si.</p>
           <p class="post-card__foot">Lire l'article →</p>
         </div>
       </article>
+      <!-- posts:end -->
     </div>
+    <p style="margin-top:var(--sp-6)"><a class="link-arrow" href="/blog/">Tous les articles
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a></p>
   </div>
 </section>
 
@@ -412,6 +415,6 @@
   <a class="btn btn--primary" href="#contact">Rendez-vous</a>
 </div>
 
-<script src="assets/js/main.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
 </body>
 </html>

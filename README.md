@@ -28,9 +28,30 @@ site/                    Variante illustrée du même aperçu, déployée sur Ve
 
 Même page, mêmes feuilles de style, mais les aplats vectoriels laissent place aux visuels
 générés : photo d'ambiance en héros, texture de brume derrière la section « Déroulé »,
-images à la une sur les trois cartes de blog. Toutes en WebP, deux largeurs, `width`/`height`
+images à la une sur les cartes de blog. Toutes en WebP, deux largeurs, `width`/`height`
 déclarés, `loading="lazy"` sous la ligne de flottaison. Les surcharges tiennent dans
 `site/assets/css/photo.css` — le reste est identique au thème.
+
+### Blog statique généré (`site/build.py`)
+
+```bash
+python3 site/build.py            # récupère les articles et régénère /blog/
+python3 site/build.py --offline  # rejoue le dernier cache, sans réseau
+```
+
+Deux sources, un seul rendu :
+
+| Source | Chemin | Ce qui est repris |
+|---|---|---|
+| WordPress PostPilot | API REST publique de `hypnoseangers3.wordpress.com` | titre, extrait, contenu Gutenberg, date |
+| Markdown local | `articles/*.md` | titre, slug, meta description, JSON-LD FAQ du bloc technique |
+
+Le script écrit `blog/index.html`, une page par article, et remplace la grille d'articles de
+la page d'accueil entre les marqueurs `<!-- posts:start -->` / `<!-- posts:end -->`.
+
+Les notes de rédaction (`[À CONFIRMER]`, `[À REMPLIR]`) sont retirées du rendu, ainsi que les
+titres qui n'ont plus de contenu une fois la note enlevée. Les liens internes écrits pour
+l'arborescence WordPress cible sont réécrits vers les ancres de la maquette (`LINK_MAP`).
 
 ## Installation
 
