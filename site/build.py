@@ -428,18 +428,18 @@ def page(title: str, description: str, canonical: str, body: str, head: str = ""
 <meta property="og:url" content="{SITE_URL}{canonical}">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/css/tokens.css">
-<link rel="stylesheet" href="/assets/css/base.css">
-<link rel="stylesheet" href="/assets/css/layout.css">
-<link rel="stylesheet" href="/assets/css/components.css">
-<link rel="stylesheet" href="/assets/css/blog.css">
-<link rel="stylesheet" href="/assets/css/photo.css">
+<link rel="stylesheet" href="/assets/css/tokens.css?v=2">
+<link rel="stylesheet" href="/assets/css/base.css?v=2">
+<link rel="stylesheet" href="/assets/css/layout.css?v=2">
+<link rel="stylesheet" href="/assets/css/components.css?v=2">
+<link rel="stylesheet" href="/assets/css/blog.css?v=2">
+<link rel="stylesheet" href="/assets/css/photo.css?v=2">
 {head}
 </head>
 <body>
 <a class="skip-link" href="#main">Aller au contenu principal</a>
 {body}
-<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/main.js?v=2" defer></script>
 </body>
 </html>
 """
