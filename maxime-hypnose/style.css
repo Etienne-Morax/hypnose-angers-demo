@@ -1,0 +1,22 @@
+/*
+Theme Name: Maxime Hypnose
+Theme URI: https://hypnose-angers-blanchard.com/
+Author: Etienne Moreau
+Description: Thème WordPress sur-mesure pour cabinet d'hypnothérapie. Direction éditoriale calme (pin profond / sable / terracotta), typographie Lora + Raleway, templates de blog optimisés pour la publication automatisée (PostPilot).
+Version: 1.0.0
+Requires at least: 6.2
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: maxime-hypnose
+Tags: one-column, custom-menu, custom-logo, blog, translation-ready, accessibility-ready
+*/
+
+/* Les styles sont répartis dans assets/css/ et chargés depuis inc/enqueue.php :
+   tokens.css     — variables de design (couleurs, typo, espacements, durées)
+   base.css       — reset, typographie de base, utilitaires
+   layout.css     — header, footer, grilles, sections
+   components.css — boutons, cartes, accordéon, formulaires
+   blog.css       — index, archive, article, pagination
+*/

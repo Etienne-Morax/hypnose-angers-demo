@@ -1,0 +1,38 @@
+/* Styles de l'éditeur : le rédacteur (humain ou automatisé) voit le rendu réel. */
+
+.editor-styles-wrapper {
+  background: #f7f4ec;
+  color: #1f3830;
+  font-family: "Raleway", ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.68;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4 {
+  font-family: "Lora", Georgia, serif;
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.012em;
+}
+
+.editor-styles-wrapper h2 { font-size: 2rem; margin-top: 2.5rem; }
+.editor-styles-wrapper h3 { font-size: 1.4rem; margin-top: 2rem; }
+
+.editor-styles-wrapper blockquote {
+  padding: 1.5rem 2rem;
+  border-left: 3px solid #c2703f;
+  background: #efeade;
+  font-family: "Lora", Georgia, serif;
+  font-style: italic;
+}
+
+.editor-styles-wrapper a { color: #a55a2f; }
+
+.editor-styles-wrapper code {
+  background: #e6e0d2;
+  padding: 0.15em 0.4em;
+  border-radius: 6px;
+}
