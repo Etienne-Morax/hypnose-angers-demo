@@ -19,8 +19,17 @@ Refonte du site vitrine [hypnose-angers-blanchard.com](https://hypnose-angers-bl
 ```
 maxime-hypnose/          Le thème (à installer)
 apercu.html              Aperçu statique de la page d'accueil (ouvrir dans un navigateur)
-.claude/launch.json      Serveur local pour l'aperçu (python3 -m http.server 4321)
+site/                    Variante illustrée du même aperçu, déployée sur Vercel
+.claude/launch.json      Serveurs locaux : aperçu (4321) et version illustrée (4322)
 ```
+
+### Variante illustrée (`site/`)
+
+Même page, mêmes feuilles de style, mais les aplats vectoriels laissent place aux visuels
+générés : photo d'ambiance en héros, texture de brume derrière la section « Déroulé »,
+images à la une sur les trois cartes de blog. Toutes en WebP, deux largeurs, `width`/`height`
+déclarés, `loading="lazy"` sous la ligne de flottaison. Les surcharges tiennent dans
+`site/assets/css/photo.css` — le reste est identique au thème.
 
 ## Installation
 

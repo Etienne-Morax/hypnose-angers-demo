@@ -6,6 +6,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "4321"],
       "port": 4321
+    },
+    {
+      "name": "site-illustre",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4322", "--directory", "site"],
+      "port": 4322
     }
   ]
 }

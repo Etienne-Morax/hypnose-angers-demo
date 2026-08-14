@@ -1,0 +1,85 @@
+/* Variante illustrée : visuels générés (hero, texture de section, cartes blog).
+   Complète les feuilles du thème, ne les remplace pas. */
+
+/* --- Héros ---------------------------------------------------------------- */
+
+.hero__frame {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--c-surface-inverse);
+  box-shadow: 0 40px 60px oklch(0.26 0.028 168 / 0.18);
+}
+
+.hero__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+}
+
+/* Voile de charte : ramène l'image générée dans la palette pin/sable. */
+.hero__frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(80% 60% at 50% 62%, transparent, oklch(0.26 0.028 168 / 0.45)),
+    linear-gradient(200deg, oklch(0.62 0.115 48 / 0.12), transparent 55%);
+  pointer-events: none;
+}
+
+/* Le point de respiration du thème, reporté sur la photo. */
+.hero__pulse {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: -2.25rem 0 0 -2.25rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, oklch(0.86 0.09 70 / 0.9), transparent 68%);
+  animation: mhBreathe 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__pulse { animation: none; }
+}
+
+/* --- Section sombre texturée ---------------------------------------------- */
+
+.section--photo {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.section--photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(oklch(0.26 0.028 168 / 0.88), oklch(0.26 0.028 168 / 0.94)),
+    image-set(url("../img/texture-brume.webp") type("image/webp"));
+  background-size: cover;
+  background-position: center;
+}
+
+/* --- Cartes blog ---------------------------------------------------------- */
+
+.post-card__media img {
+  transition: transform var(--dur-slow, 500ms) var(--ease-out, ease);
+}
+
+.post-card:hover .post-card__media img,
+.post-card:focus-within .post-card__media img {
+  transform: scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-card__media img { transition: none; }
+  .post-card:hover .post-card__media img { transform: none; }
+}
