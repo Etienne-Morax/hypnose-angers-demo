@@ -1,5 +1,17 @@
 # Maxime Hypnose — thème WordPress
 
+## Les deux démos en ligne
+
+| Démo | URL | Ce qu'elle prouve |
+|---|---|---|
+| **Vitrine premium** (statique) | https://etienne-morax.github.io/hypnose-angers-demo/ | La direction artistique réelle : Lora + Raleway, orbe animée, palette complète. C'est ce que donne le thème sur mesure. |
+| **WordPress live** | https://hypnoseangers3.wordpress.com/ | Le pipeline éditorial : articles publiés par API, grille de blog, SEO et JSON-LD automatiques. C'est la démo PostPilot. |
+
+Les deux ne se remplacent pas. Le WordPress tourne sur un plan gratuit : ni thème custom,
+ni CSS personnalisée, ni polices web — la charte y est approchée avec les styles portés
+par les blocs. La version GitHub Pages montre le rendu sans ces contraintes.
+
+
 Refonte du site vitrine [hypnose-angers-blanchard.com](https://hypnose-angers-blanchard.com/) sous forme de thème WordPress classique, installable sur n'importe quel WordPress auto-hébergé (ou WordPress.com plan Business/Commerce).
 
 ## Ce que contient le dépôt
